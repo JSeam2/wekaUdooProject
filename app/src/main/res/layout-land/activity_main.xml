@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Part 1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accuracy:"/>
+
+            <TextView
+                android:id="@+id/accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting for value"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confusion:"/>
+
+            <TextView
+                android:id="@+id/confusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting for value"/>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Part 2"/>
+
+            <EditText
+                android:id="@+id/sepal_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Sepal Length"/>
+
+            <EditText
+                android:id="@+id/sepal_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Sepal Width"/>
+
+            <EditText
+                android:id="@+id/petal_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Petal Length"/>
+
+            <EditText
+                android:id="@+id/petal_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Petal Width"/>
+
+
+            <Button
+                android:id="@+id/train_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train"/>
+
+            <Button
+                android:id="@+id/classify_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classify"/>
+
+            <TextView
+                android:id="@+id/class_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Class"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Part 3"/>
+
+            <TextView
+                android:id="@+id/textView_distance_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/pressure" />
+
+            <TextView
+                android:id="@+id/textView_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Waiting for value..." />
+
+            <TextView
+                android:id="@+id/textView_pulse_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/pulse" />
+
+            <TextView
+                android:id="@+id/textView_pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Waiting for value..." />
+
+            <TextView
+                android:id="@+id/textView_position_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/position" />
+
+            <TextView
+                android:id="@+id/textView_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Waiting for value..." />
+
+
+            <ToggleButton
+                android:id="@+id/collect_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Collect Off"
+                android:textOn="Collect On" />
+
+            <ToggleButton
+                android:id="@+id/collect_stress_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Rest"
+                android:textOn="Stress"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/train_stress_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Train"/>
+
+            <ToggleButton
+                android:id="@+id/stress_test_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Test Off"
+                android:textOn="Test On"/>
+
+            <TextView
+                android:id="@+id/stress_test_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting for Value"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

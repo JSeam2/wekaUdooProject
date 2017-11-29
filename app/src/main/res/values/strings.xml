@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remote Pressure Sensor</string>
+    <string name="action_settings">Settings</string>
+    <string name="pressure">Pulse: </string>
+    <string name="pulse">Oxygen: </string>
+    <string name="position">Position: </string>
+</resources>
